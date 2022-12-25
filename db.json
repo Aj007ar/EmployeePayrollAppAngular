@@ -1,0 +1,46 @@
+{
+  "employee": [
+    {
+      "name": "Naveen",
+      "gender": "male",
+      "salary": 341200,
+      "department": [
+        "Finance"
+      ],
+      "startDate": "2018-12-12",
+      "id": 13
+    },
+    {
+      "name": "Smith Patel",
+      "gender": "male",
+      "salary": 453200,
+      "department": [
+        "Engineer"
+      ],
+      "startDate": "2018-12-09",
+      "id": 14
+    },
+    {
+      "name": "Smith Patel",
+      "gender": "male",
+      "salary": 333000,
+      "department": [
+        "Finance",
+        "HR"
+      ],
+      "startDate": "2018-12-05",
+      "id": 15
+    },
+    {
+      "name": "Smith Patel",
+      "gender": "female",
+      "salary": 336900,
+      "department": [
+        "Finance"
+      ],
+      "startDate": "2018-12-06",
+      "profile": "../../../assets/Ellipse -2.png",
+      "id": 16
+    }
+  ]
+}

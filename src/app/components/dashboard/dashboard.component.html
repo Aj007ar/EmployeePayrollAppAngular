@@ -1,0 +1,63 @@
+<div class="logo-content" routerLink="/dashboard">
+    <img src="../../../assets/logo.png" alt="Employee logo">
+    <div class="heading">
+        <span class="emp-text">Employee</span>
+        <span class="emp-payroll">Payroll</span>
+    </div>
+</div>
+<div class="demo-button-container">
+    <button mat-raised-button class="demo-button" routerLink="/addemployee">
+        Add Book
+    </button>
+</div>
+<div class="tbl">
+    <TABLE style="border: none; " BORDER="0 " WIDTH="70% " CELLPADDING="10 " CELLSPACING="0 ">
+        <TR class="headtbl">
+            <TH COLSPAN="1 ">
+                <!-- <H3 style="text-align: center; ">Sr. No.</H3>
+                <p></p> -->
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Name</H3>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Gender</H3>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Department</H3>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Salary</H3>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">StartDate</H3>
+            </TH>
+            <TH COLSPAN="1 ">
+                <H3 style="text-align: center; ">Action</H3>
+            </TH>
+        </TR>
+
+        <TR *ngFor="let emp of employee">
+            <TH style="color: #333232;opacity: 0.81; "><img src="{{emp.profile}}" alt=""></TH>
+            <TH style="color: #333232; font: normal normal normal 16px/21px Roboto;">{{emp.name}}</TH>
+            <TH style="color: #333232;font: normal normal normal 16px/21px Roboto; ">{{emp.gender}}</TH>
+            <TH style="text-align: start;color: #333232; font: normal normal normal 16px/21px Roboto;">
+                {{emp.department}}</TH>
+            <TH style="text-align: start;color: #333232;font: normal normal normal 16px/21px Roboto;">{{emp.salary}}</TH>
+            <TH style="text-align: start;color: #333232;font: normal normal normal 16px/21px Roboto;">{{emp.startDate}}</TH>
+            <TH style="text-align: start;color: #333232;">
+                <div class="icons">
+                    <div class="action">
+                        <img src="../../../assets/delete.svg" alt="" (click)="deleteEmp(emp.id)">
+                    </div>
+                    <div class="action">
+                        <img src="../../../assets/edit.svg" alt="">
+                    </div>
+                </div>
+            </TH>
+        </TR>
+    </TABLE>
+    <!-- <div class="page">
+        <pagination-controls (pageChange)="page=$event" class="page"></pagination-controls>
+    </div> -->
+</div>

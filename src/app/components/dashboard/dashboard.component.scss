@@ -1,0 +1,163 @@
+.logo-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+
+.logo-content>img {
+    border: 0px solid #42515F;
+    margin: 6px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.emp-text {
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: uppercase;
+    font: normal normal bold 20px/25px Montserrat;
+}
+
+.emp-payroll {
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: uppercase;
+    font: normal normal bold 20px/25px Montserrat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 227px;
+    margin-right: 240px;
+}
+
+.books {
+    font-size: 27px;
+    font-family: 'Roboto';
+    margin-top: 21px;
+}
+
+p {
+    margin-left: 23px;
+    font-size: small;
+}
+
+// table,
+// th,
+// td {
+//     // border: 1px solid #eceeef;
+// }
+
+.src {
+    width: 200px;
+    height: 200px;
+}
+
+.tbl {
+    margin: 1px;
+    margin-left: 229px;
+    margin-right: -218px;
+}
+
+.header {
+    margin-top: 1px;
+    margin-left: 30px;
+}
+
+.page {
+    margin-left: 299px;
+
+}
+
+.update {
+    margin-top: 16px;
+}
+
+.delete {
+    margin-top: 16px;
+}
+
+.Addbook {
+    margin: 1px;
+}
+
+.Addbook button {
+    margin: 1px;
+}
+
+.demo-button-container {
+    padding-bottom: 16px;
+    margin-left: 1150px;;
+}
+
+.demo-button {
+    background-color: #82A70C;
+    border: none;
+    color: white;
+    margin-left: -1px;
+    height: 42px;
+    width: 131px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+table {
+    counter-reset: tableCount;
+}
+
+.counterCell:before {
+    content: counter(tableCount);
+    counter-increment: tableCount;
+}
+
+.update button {
+    background-color: #185abc;
+    border: none;
+    color: white;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: list-item;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.Delete button {
+    background-color: #090e16;
+    border: none;
+    color: white;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: list-item;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 14px;
+}
+
+.headtbl {
+    background-color: #42515F;
+    color: aliceblue;
+    height: 1px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.action{
+    margin: 1px;
+}

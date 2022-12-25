@@ -1,0 +1,79 @@
+<div class="logo-content" routerLink="/dashboard">
+    <img src="../../../assets/logo.png" alt="Employee logo">
+    <div class="heading">
+        <span class="emp-text">Employee</span>
+        <span class="emp-payroll">Payroll</span>
+    </div>
+</div>
+<div class="form-content">
+    <form [formGroup]="registerForm">
+        <div class="form-head">Employee Payroll Form</div>
+        <div class="row-content">
+            <label class = "label text"for="name">Name</label>
+            <input type="text" class="input" name="name" placeholder="Enter Your Name" formControlName="name">
+        </div>
+        <div class="row-content">
+            <label class="label" for="profile">Profile Image</label>
+            <div class="profile-content">
+
+                <label>
+                    <input type="radio" name="profile" value="../../../assets/Ellipse -1.png" formControlName="profile">
+                    <img src="../../../assets/Ellipse -1.png" alt="" class="profile">
+                </label>
+                <label>
+                    <input type="radio" name="profile" value="../../../assets/Ellipse -2.png" formControlName="profile">
+                    <img src="../../../assets/Ellipse -2.png" alt="" class="profile">
+                </label>
+                <label>
+                    <input type="radio" name="profile" value="../../../assets/Ellipse -8.png" formControlName="profile">
+                    <img src="../../../assets/Ellipse -8.png" alt="" class="profile">
+                </label>
+                <label>
+                    <input type="radio" name="profile" value="../../../assets/Ellipse -7.png" formControlName="profile">
+                    <img src="../../../assets/Ellipse -7.png" alt="" class="profile">
+                </label>
+            </div>
+        </div>
+        <div class="row-content">
+            <label class="label" for="gender">Gender</label>
+            <div>
+                <input id="male" type="radio" value="male" name="gender" formControlName="gender">
+                <label for="male">Male</label>
+             </div>
+    
+             <div>
+                <input id="female" type="radio" value="female" name="gender" formControlName="gender">
+                <label for="female">Female</label>
+             </div>
+        </div>
+        <div class="row-content">
+            <label class="label" for="department">Department</label>
+            <div class="department-content">
+                <div *ngFor="let dep of departmentList">
+                    <label>
+                      <input type="checkbox" [value]="dep.name" (change)="onCheckboxChange($event)" />
+                      {{dep.name}}
+                    </label>
+                  </div>
+            </div>
+        </div>
+        <div class="row-content">
+            <label class="label" for="salary">Salary</label>
+            <input type="range" class="input" id="salary" min="300000" max="500000" step="100" name="salary"
+                 formControlName="salary">
+                <label class="example-value-label">500000</label>
+        </div>
+          <div class="row-content">
+            <label class="label" for="startDate">Start Date</label>
+            
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" formControlName="startDate">
+        </div>
+        <div class="button-div">
+            <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
+            <div class="submit-reset">
+                <button type="submit" class="button submitButton" (click)="saveEmp()">Submit</button>
+                <button type="reset" class="button resetButton">Reset</button>
+            </div>
+        </div>
+    </form>
+</div>
