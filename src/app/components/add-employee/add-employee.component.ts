@@ -10,12 +10,13 @@ import { EmployeeService } from 'src/app/Services/employee/employee.service';
 export class AddEmployeeComponent implements OnInit {
   registerForm!: FormGroup;
   submitted = false;
+  selectedDepartment:any=[]
   departmentList:any=[
-    { name: 'HR' },
-    { name: 'Finance' },
-    { name: 'Sales' },
-    { name: 'Engineer' },
-    { name: 'Others' }
+    { name: 'HR' ,value:'HR',checked:false},
+    { name: 'Finance',value:'Finance',checked:false},
+    { name: 'Sales',value:'Sales',checked:false},
+    { name: 'Engineer',value:'Engineer',checked:false},
+    { name: 'Others',value:'Others',checked:false}
   ];
   
   salary = 0;
@@ -31,15 +32,16 @@ export class AddEmployeeComponent implements OnInit {
       profile: ['',Validators.required],
     });
   }
-  onCheckboxChange(e:any) {
-    const website: FormArray = this.registerForm.get('department') as FormArray;
-   
-    if (e.target.checked) {
-      website.push(new FormControl(e.target.value));
-    } else {
-       const index = website.controls.findIndex(x => x.value === e.target.value);
-       website.removeAt(index);
-    }
+
+  onCheckboxChange(e:any){
+    const depart: FormArray = this.registerForm.get('department') as FormArray;
+
+    if (e.target.checked){
+    depart.push(new FormControl(e.target.value))
+    }else {
+           const index = depart.controls.findIndex(x => x.value === e.target.value);
+           depart.removeAt(index);
+        }
   }
   get f() { return this.registerForm.controls; }
   saveEmp() {

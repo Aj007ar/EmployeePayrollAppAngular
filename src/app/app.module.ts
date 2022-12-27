@@ -11,17 +11,19 @@ import { MatCheckboxModule } from '@angular/material/checkbox'
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { MatSliderModule } from '@angular/material/slider'
 import { MatCardModule } from '@angular/material/card'
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { UpdateComponent } from './components/update/update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddEmployeeComponent,
-    DashboardComponent
+    DashboardComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     MatCheckboxModule,
     MatDatepickerModule,
     MatSliderModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

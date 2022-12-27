@@ -16,4 +16,7 @@ export class EmployeeService {
   deleteEmployee(data:any){
     return this.http.delete("http://localhost:3000/employee/"+data)
   }
+  updateEmp(id:any,data:any){
+    return this.http.put("http://localhost:3000/employee/"+id,data)
+  }
 }

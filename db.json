@@ -1,46 +1,76 @@
 {
   "employee": [
     {
-      "name": "Naveen",
-      "gender": "male",
-      "salary": 341200,
+      "name": "Mitali Raj",
+      "profile": "../../../assets/Ellipse -1.png",
+      "gender": "female",
       "department": [
         "Finance"
       ],
+      "salary": 342800,
       "startDate": "2018-12-12",
-      "id": 13
+      "id": 19
     },
     {
-      "name": "Smith Patel",
-      "gender": "male",
-      "salary": 453200,
+      "name": "Julee Sharma",
+      "profile": "../../../assets/Ellipse -7.png",
+      "gender": "female",
       "department": [
+        "Sales",
         "Engineer"
       ],
-      "startDate": "2018-12-09",
-      "id": 14
+      "salary": 453400,
+      "startDate": "2018-11-28",
+      "id": 20
+    },
+    {
+      "name": "Jason Roy",
+      "profile": "../../../assets/Ellipse -8.png",
+      "gender": "male",
+      "department": [
+        "Sales",
+        "Engineer"
+      ],
+      "salary": 370400,
+      "startDate": "2018-12-14",
+      "id": 21
+    },
+    {
+      "name": "Jason Roy",
+      "profile": "../../../assets/Ellipse -2.png",
+      "gender": "male",
+      "department": [
+        "Sales",
+        "Engineer"
+      ],
+      "salary": 464400,
+      "startDate": "2022-12-22",
+      "id": 22
     },
     {
       "name": "Smith Patel",
+      "profile": "../../../assets/Ellipse -2.png",
       "gender": "male",
-      "salary": 333000,
+      "department": [
+        "Engineer",
+        "Sales"
+      ],
+      "salary": 348600,
+      "startDate": "2018-12-07",
+      "id": 23
+    },
+    {
+      "name": "Smith Patel",
+      "profile": "../../../assets/Ellipse -2.png",
+      "gender": "male",
       "department": [
         "Finance",
-        "HR"
+        "Sales",
+        "Engineer"
       ],
-      "startDate": "2018-12-05",
-      "id": 15
-    },
-    {
-      "name": "Smith Patel",
-      "gender": "female",
-      "salary": 336900,
-      "department": [
-        "Finance"
-      ],
-      "startDate": "2018-12-06",
-      "profile": "../../../assets/Ellipse -2.png",
-      "id": 16
+      "salary": 335300,
+      "startDate": "2018-12-22",
+      "id": 25
     }
   ]
 }
